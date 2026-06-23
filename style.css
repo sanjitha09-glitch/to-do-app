@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{ 
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+
+    background-image:("c:\Users\SANJITHA\Downloads\background.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    
+}
+
+.container{
+    width:100%;
+    max-width:500px;
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.2);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.input-box{
+    display:flex;
+    gap:10px;
+}
+
+.input-box input{
+    flex:1;
+    padding:15px;
+    border:2px solid #ddd;
+    border-radius:12px;
+    font-size:16px;
+}
+
+.input-box button{
+    width:55px;
+    border:none;
+    border-radius:12px;
+    background:#667eea;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.filters{
+    display:flex;
+    gap:10px;
+    margin:20px 0;
+}
+
+.filters button{
+    flex:1;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background:#f1f1f1;
+}
+
+ul{
+    list-style:none;
+}
+
+.task{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+    margin-bottom:10px;
+    background:#f8f8f8;
+    border-radius:12px;
+}
+
+.task.completed span{
+    text-decoration:line-through;
+    opacity:.6;
+}
+
+.actions{
+    display:flex;
+    gap:8px;
+}
+
+.actions button{
+    border:none;
+    padding:8px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.complete{
+    background:#22c55e;
+    color:white;
+}
+
+.edit{
+    background:#f59e0b;
+    color:white;
+}
+
+.delete{
+    background:#ef4444;
+    color:white;
+}
+
+.footer{
+    text-align:center;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+@media(max-width:500px){
+
+    .container{
+        padding:20px;
+    }
+
+    .input-box input{
+        font-size:14px;
+    }
+}
