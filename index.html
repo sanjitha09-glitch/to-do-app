@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-do App</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📝 To-do App</h1>
+
+    <div class="input-box">
+        <input type="text"
+               id="taskInput"
+               placeholder="Add a new task...">
+
+        <button onclick="addTask()">
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>
+
+    <div class="filters">
+        <button onclick="filterTasks('all')">All</button>
+        <button onclick="filterTasks('active')">Active</button>
+        <button onclick="filterTasks('completed')">Completed</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <div class="footer">
+        <span id="taskCount">0 Tasks</span>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
